@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="sv" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sidan hittades inte – Salong Poppitopp</title>
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<script>
+(function(){
+  var saved = localStorage.getItem('theme');
+  if(saved) document.documentElement.setAttribute('data-theme', saved);
+})();
+</script>
+<link rel="stylesheet" href="site-kit.css">
+<link rel="stylesheet" href="styles.css">
+<style>
+.error-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+  gap: 1rem;
+}
+.error-code {
+  font-family: 'Marcellus', Georgia, serif;
+  font-size: clamp(5rem, 15vw, 9rem);
+  line-height: 1;
+  color: var(--accent);
+  opacity: 0.25;
+}
+.error-page h1 {
+  font-size: clamp(1.6rem, 4vw, 2.5rem);
+  margin-bottom: 0.5rem;
+}
+.error-page p {
+  color: var(--ink-soft);
+  max-width: 400px;
+  margin-bottom: 1.5rem;
+}
+</style>
+</head>
+<body>
+<header class="site-header is-scrolled">
+  <div class="header-inner">
+    <a href="index.html" class="logo-link">
+      <img src="logo.png" alt="Salong Poppitopp" class="site-logo">
+    </a>
+  </div>
+</header>
+<main class="error-page">
+  <div class="error-code">404</div>
+  <h1>Sidan hittades inte</h1>
+  <p>Det verkar som att sidan du letar efter inte finns — kanske har länken ändrats eller stavats fel.</p>
+  <a href="index.html" class="btn btn-primary">Tillbaka till startsidan</a>
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-inner">
+      <p class="footer-copy">Salong Poppitopp · Kaplansgatan 15, Gävle</p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
